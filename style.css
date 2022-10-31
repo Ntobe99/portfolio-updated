@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url(bac.jpg);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    
+}
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-200px;
+	top:0px;
+	transition:left 0.3s linear;
+}
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+ul li{
+	list-style:none;
+}
+
+ul li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display:block;
+	width:180px;
+	padding:10px;
+	text-decoration: none;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-60px;
+}
+
+#sidebar-btn span{
+	height:1px;
+	background:#111;
+	margin-bottom:5px;
+	display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+	width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+	width:50%;
+}
+  .text {
+    font-family: "Recursive", monospace;
+    font-size: clamp(4em, 15vmin, 20em);
+    text-shadow: 0;
+    color: #fefae0;
+    animation: anime 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+  }
+  
+  @keyframes anime {
+    from {
+      font-variation-settings: "wght" 800, "slnt" 0;
+      text-shadow: -5px 10px 0px #dba2e5, -10px 20px 0px #b065a0,
+        -15px 30px 0px #842184;
+    }
+    to {
+      font-variation-settings: "wght" 300, "slnt" 15;
+      text-shadow: none;
+    }
+  }
+  .full{
+    color: palevioletred ;
+  }
+  .flex-container{
+    text-align: center;
+    color:black;
+    width: 100%;
+    margin-left: 80px;
+    padding: 0;
+    
+  }
+
+  .text{
+    margin-top: 80px;
+    
+    
+   
+
+  }
+  .pic{
+    margin:100px
+   
+
+    
+  }
+  img{
+    border-radius: 50%;
+    height: 500px;
+  }
+  .container{
+    
+    padding: 10px;
+    margin: 0;
+  }
+  .social-icons{
+    padding: 20px 10px; 
+  }
+  .social-icons :hover{
+    background-color:palevioletred;
+    border-radius: 50%;
+    padding:10px ;
+
+    
+
+  }
+  .container{
+    display: flex;
+  }
