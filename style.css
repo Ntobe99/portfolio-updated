@@ -1,6 +1,5 @@
 *{
-    margin:0;
-    padding: 0;
+   
 }
 
 
@@ -21,11 +20,10 @@ body{
   height: 100vh;
   background-size: cover;
 }
-.text {
-  font-family: "Recursive", monospace;
+.text { 
   font-size: clamp(4em, 15vmin, 20em);
   text-shadow: 0;
-  color: #fefae0;
+  color: black;
   animation: anime 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
 }
 
@@ -81,13 +79,13 @@ body{
   border-bottom: 3px solid palevioletred;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #home {
     background-attachment: fixed;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   #home h1 {
     font-size: 28px;
     line-height: 36px;
@@ -117,7 +115,7 @@ body{
   font-size: 18px;
   display: inline-block;
   background:plum;
-  color: #fff;
+  color:#e0e0e0;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -187,6 +185,12 @@ body{
     color: #fff;
   }
   /*About section*/
+  #about{
+  width: 100%;
+  height: 150vh ;
+  background-size: cover;
+
+  }
   .about .content h3 {
     font-weight: 700;
     font-size: 26px;
@@ -214,47 +218,32 @@ body{
     color: palevioletred;
     line-height: 0;
   }
+  .about img{
+    height: 450px;
+  }
+  .about .progress-bar{
+    background-color: palevioletred;
+
+  }
   
-  .about .content p:last-child {
-    margin-bottom: 0;
+  .about .content:last-child {
+      margin-bottom: 0;}
   
   .nav-menu a:hover i,
   .nav-menu .active i,
   .nav-menu .active:focus i,
   .nav-menu li:hover>a i {
-    color:palevioletred;
+    color:rgb(131, 112, 216);
   }
-  /* Mobile Navigation */
-.mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  background-color:palevioletred;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  border-radius: 50px;
-  cursor: pointer;
-}
+  /* Mobile  */
 
-.mobile-nav-active {
-  overflow: hidden;
-}
+@media only screen and (max-width: 600px) {
+  #about {background: transparent;
+    background-attachment: fixed;
+   height: 100%;}
+  }
 
-.mobile-nav-active #header {
-  left: 0;
-}
 
-}
 /*work&education section*/
 #resume{
   width: 100%;
@@ -265,9 +254,10 @@ body{
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   color: black;
+  margin-left: 15px;
 }
 
 .resume .resume-item {
@@ -275,6 +265,7 @@ body{
   margin-top: -2px;
   border-left: 2px solid #1f5297;
   position: relative;
+  margin-left: 15px;
 }
 
 .resume .resume-item h4 {
@@ -285,6 +276,7 @@ body{
   font-family: "Poppins", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 .resume .resume-item h5 {
@@ -319,6 +311,11 @@ body{
   background: #fff;
   border: 2px solid #1f5297;
 }
+@media only screen and (max-width: 600px) {
+  #resume {background: transparent;
+    background-attachment: fixed;
+   height: 100%;}
+  }
 /*My work section*/
 #my-work {
   width: 100%;
@@ -326,36 +323,71 @@ body{
   background-size: cover;
   background-color: #d5b7ce;
   
+  
+  
+}
+#my-work h4{
+  margin-left: 15px;
 }
 #my-work .card{
   background-color:rgb(173, 173, 211);
-  margin-left: 10px;
+  margin-left: 15px;
   box-shadow: 5px 5px 3px 5px #888888;
 }
-@media (max-width: 1199px) {
-  #my-work {
-    background-attachment: fixed;
-  }}
+@media only screen and (max-width: 600px) {
+  #my-work{background: transparent;
+   background-attachment: fixed;
+   height: 100%;}
+  }
+
 
 /*testimonial section*/
 #testimonial{
 width: 100%;
 height: 100vh ;
 background-size: cover;
+margin-left: 15px;
+
 }
-
-
+#testimonial .carousel{
+  margin-top: 60px;
+}
 #testimonial .card{
-  margin-left: 200px;
+  margin-left: 300px;
+  background-color:#ede5ef;
+  
 }
-#testiomonial .carousel button{
-  color:black
+#testimonial img{
+  width: 250px;
+  height: 250px;
+  margin-left: 100px;
+  margin-top: 20px;
 }
+@media only screen and (max-width: 600px) {
+  #testimonial {background: transparent;
+    background-attachment: fixed;
+   height: 100%;}
+   #tesimonial .card{
+    margin-left: 2px;
+    margin-right: 2px;
+   }
+  }
+
+
+
 /*contact section*/
 #contact{
   width: 100%;
   height: 100vh ;
   background-size: cover;
+}
+form{
+  padding: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  background-color: #ede5ef;
+  border-radius: 10px;
+  box-shadow:3px 3px 2px 3px #6f7180;
 }
 .formbold-mb-5 {
   margin-bottom: 20px;
@@ -368,6 +400,7 @@ background-size: cover;
   align-items: center;
   justify-content: center;
   padding: 48px;
+ 
 }
 
 .formbold-form-wrapper {
@@ -416,7 +449,7 @@ background-size: cover;
   background-color: palevioletred;
   color:black;
   cursor: pointer;
-  margin-left: 550px;
+  margin-left: 500px;
   box-shadow:0px 3px 8px rgba(0, 0, 0, 0.05); ;
 }
 .formbold-btn:hover {
@@ -440,7 +473,11 @@ background-size: cover;
 .w-full {
   width: 100%;
 }
-@media (min-width: 540px) {
+@media (max-width: 600px) {
   .sm\:w-half {
     width: 50%;
   }
+  .formbold-btn{
+    margin-left: 15px;
+  }
+}
